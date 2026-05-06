@@ -1,0 +1,200 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= ROOT ================= */
+:root {
+  --bg-dark: #0a0a0f;
+  --primary: #00c6ff;
+  --secondary: #7b61ff;
+  --text-main: #ffffff;
+  --text-muted: #a0a0b0;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  overflow: hidden;
+}
+
+/* ================= PAGE ================= */
+.error-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ================= BACKGROUND ================= */
+.error-bg .orb {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+  animation: float 18s infinite ease-in-out;
+}
+
+.orb1 {
+  background: var(--primary);
+  top: 10%;
+  left: 10%;
+}
+
+.orb2 {
+  background: var(--secondary);
+  bottom: 10%;
+  right: 10%;
+  animation-delay: 4s;
+}
+
+.orb3 {
+  background: #ff4ecd;
+  top: 50%;
+  left: 50%;
+  animation-delay: 8s;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(60px,-60px); }
+  100% { transform: translate(0,0); }
+}
+
+/* ================= CONTAINER ================= */
+.error-container {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  animation: fadeUp 1s ease forwards;
+}
+
+/* ================= 404 TEXT ================= */
+.error-code {
+  font-size: 120px;
+  font-weight: 800;
+
+  background: linear-gradient(135deg, #00c6ff, #7b61ff, #ff4ecd);
+  background-size: 200%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 6s infinite linear;
+}
+
+/* GRADIENT MOVE */
+@keyframes gradientMove {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+/* ================= TEXT ================= */
+.error-title {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.error-text {
+  max-width: 420px;
+  margin: auto;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ================= BUTTONS ================= */
+.error-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* BUTTON BASE */
+.btn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* PRIMARY */
+.btn.primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+}
+
+.btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,198,255,0.3);
+}
+
+/* GHOST */
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--text-main);
+}
+
+.btn.ghost:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+}
+
+/* ================= ENTRY ANIMATION ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= HOVER EFFECT ================= */
+.error-code:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 30px rgba(0,198,255,0.5);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .error-code {
+    font-size: 80px;
+  }
+
+  .error-title {
+    font-size: 24px;
+  }
+
+  .error-container {
+    padding: 30px;
+  }
+
+  .error-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Corporate UI</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div class="page-loader" id="pageLoader">
+    <h1 class="loader-logo">STACKLY</h1>
+    <div class="spinner"></div>
+  </div>
+<!-- ================= GLOBAL WRAPPER ================= -->
+<div class="main-wrapper">
+
+  <!-- Background animation layer -->
+  <div class="global-bg">
+    <div class="gradient-orb orb1"></div>
+    <div class="gradient-orb orb2"></div>
+    <div class="gradient-orb orb3"></div>
+  </div>
+
+  <header class="navbar">
+    <div class="nav-inner">
+
+      <!-- Logo (Clickable Home) -->
+      <a href="index.html" class="logo">Stackly</a>
+
+      <!-- Navigation -->
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item active">Home</a>
+        <a href="404.html" class="nav-item">Work</a>
+        <a href="404.html" class="nav-item">Services</a>
+        <a href="404.html" class="nav-item">About</a>
+        <a href="404.html" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="nav-cta">
+        <button class="btn ghost" onclick="location.href='404.html'">
+          Sign In
+        </button>
+        <button class="btn primary" onclick="location.href='404.html'">
+          Sign Up
+        </button>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <section class="hero ref-hero">
+
+    <div class="hero-box">
+
+      <!-- IMAGE -->
+      
+
+      <!-- OVERLAY -->
+      <div class="hero-overlay"></div>
+
+      <!-- CONTENT (IMPORTANT: OUTSIDE overlay) -->
+      <div class="hero-content">
+        <h1>Stackly Business <br><span>LANDING PAGE</span></h1>
+        <p>We design and develop future-ready digital products that are fast, scalable, and visually engaging. From concept to deployment, we help brands transform ideas into impactful digital experiences.</p>
+        <button class="btn ghost" onclick="location.href='404.html'">
+          Read More
+        </button>
+      </div>
+
+      <div class="hero-image">
+        <img src="./Assets/hero_image.webp" alt="Hero">
+      </div>
+
+    </div>
+  
+  </section>
+  <!-- ================= CLIENT STRIP (MARQUEE) ================= -->
+
+  <section class="client-strip">
+
+    <div class="marquee">
+
+      <div class="track">
+        <span>Google</span>
+        <span>Amazon</span>
+        <span>Microsoft</span>
+        <span>Adobe</span>
+        <span>Netflix</span>
+
+        <!-- duplicate for seamless loop -->
+        <span>Google</span>
+        <span>Amazon</span>
+        <span>Microsoft</span>
+        <span>Adobe</span>
+        <span>Netflix</span>
+      </div>
+
+    </div>
+
+  </section>
+
+    <!-- ================= SERVICES (INTERACTIVE GRID) ================= -->
+    
+  <section class="services">
+
+    <div class="container">
+
+      <!-- SECTION HEADER -->
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>We provide end-to-end digital solutions designed for performance, scalability, and modern user experience.</p>
+      </div>
+
+      <!-- SERVICES GRID -->
+      <div class="services-grid">
+
+        <div class="service-card glass">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>High-performance, scalable websites built with modern technologies and best practices.</p>
+        </div>
+
+        <div class="service-card glass">
+          <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>App Development</h3>
+          <p>Responsive and user-friendly mobile applications tailored to your business needs.</p>
+        </div>
+
+        <div class="service-card glass">
+          <div class="icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Clean, intuitive, and engaging designs focused on user experience and conversions.</p>
+        </div>
+
+        <div class="service-card glass">
+          <div class="icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Digital Strategy</h3>
+          <p>Data-driven strategies to scale your product and maximize your online presence.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+    <!-- ================= SPLIT ABOUT (PARALLAX) ================= -->
+
+  <section class="about-split">
+
+    <!-- LEFT PARALLAX -->
+
+    <div class="about-left">
+
+      <div class="image-frame glass">
+        <img src="./Assets/about-us-Image.webp" alt="About Image">
+      </div>
+
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="about-right">
+
+      <h2>We Design With Purpose</h2>
+
+      <p class="about-lead">
+        We craft digital experiences that are not only visually stunning but engineered for performance, scalability, and long-term growth.
+      </p>
+
+      <div class="about-points">
+        <p>⚡ Performance-driven architecture</p>
+        <p>🚀 Scalable systems for future growth</p>
+        <p>🎯 User-first design thinking</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= STATS (COUNTER + FLOAT) ================= -->
+
+
+  <section class="stats reveal">
+
+    <div class="container stats-wrapper">
+
+      <!-- 🔥 NEW HEADER -->
+      <div class="stats-header">
+        <span class="stats-tag">Our Performance</span>
+        <h2 class="stats-title">Numbers That Define Our Growth</h2>
+        <p class="stats-desc">
+          We focus on delivering measurable results with consistent performance and long-term value.
+        </p>
+      </div>
+
+      <!-- EXISTING CONTENT (UNCHANGED) -->
+      <div class="stats-inner">
+
+        <div class="stat-box glass">
+          <div class="stat-icon">🚀</div>
+          <h3 class="counter" data-target="150">0</h3>
+          <p>Projects Delivered</p>
+          <span class="stat-sub">High-quality builds</span>
+        </div>
+
+        <div class="stat-box glass">
+          <div class="stat-icon">🤝</div>
+          <h3 class="counter" data-target="98">0</h3>
+          <p>Happy Clients</p>
+          <span class="stat-sub">Long-term partnerships</span>
+        </div>
+
+        <div class="stat-box glass">
+          <div class="stat-icon">⏳</div>
+          <h3 class="counter" data-target="5">0</h3>
+          <p>Years Experience</p>
+          <span class="stat-sub">Industry expertise</span>
+        </div>
+
+        <div class="stat-box glass">
+          <div class="stat-icon">⚡</div>
+          <h3 class="counter" data-target="240">0</h3>
+          <p>Deployments</p>
+          <span class="stat-sub">Fast & scalable</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+    <!-- ================= PROCESS (SCROLL TIMELINE) ================= -->
+  <section class="process">
+
+    <div class="container">
+
+      <!-- HEADER -->
+      <div class="process-header">
+        <span class="process-tag">Workflow</span>
+        <h2>Our Process</h2>
+        <p>We follow a structured and scalable approach to deliver high-quality digital solutions.</p>
+      </div>
+
+      <!-- TIMELINE -->
+      <div class="process-line">
+
+        <div class="process-step">
+          <div class="process-card">
+            <h3>1. Planning</h3>
+            <p>Understanding requirements and defining clear goals.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-card">
+            <h3>2. Design</h3>
+            <p>Crafting modern UI with user-first experience.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-card">
+            <h3>3. Development</h3>
+            <p>Building scalable and high-performance systems.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-card">
+            <h3>4. Deployment</h3>
+            <p>Launching optimized and production-ready solutions.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SHOWCASE (HOVER REVEAL) ================= -->
+  <section class="showcase">
+
+    <div class="container"> <!-- ✅ ADD THIS -->
+
+      <!-- HEADER -->
+      <div class="showcase-header">
+        <span class="section-tag">Portfolio</span>
+        <h2>Our Recent Work</h2>
+        <p>
+          A selection of high-performance and visually stunning digital products
+          crafted for modern businesses.
+        </p>
+      </div>
+
+      <!-- PROJECT GRID -->
+      <div class="showcase-grid">
+
+        <div class="project">
+          <img src="./Assets/project1.webp" alt="project1">
+          <div class="overlay"></div>
+
+          <div class="project-content">
+            <span class="project-tag">Web App</span>
+            <h3>Finance Dashboard</h3>
+            <p>Real-time analytics platform with modern UI & performance optimization.</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="./Assets/project2.webp" alt="project2">
+          <div class="overlay"></div>
+
+          <div class="project-content">
+            <span class="project-tag">UI/UX</span>
+            <h3>SaaS Landing</h3>
+            <p>Conversion-focused landing page with smooth animations and scalability.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div> <!-- ✅ END container -->
+
+  </section>
+
+
+  <!-- ================= TESTIMONIAL (GLASS SLIDER) ================= -->
+  <section class="testimonials">
+
+    <div class="container">
+
+      <!-- HEADER -->
+      <div class="testimonial-header">
+        <span class="section-tag">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+        <p>Trusted by teams who value performance, design, and scalability.</p>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="testimonial-wrapper">
+
+        <div class="testimonial-track">
+
+          <!-- CARD 1 -->
+          <div class="testimonial-card glass">
+            <p>“Stackly delivered beyond expectations. The UI is stunning and performance is top-notch.”</p>
+            <div class="user">
+              <strong>Arun Kumar</strong>
+              <span>Startup Founder</span>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="testimonial-card glass">
+            <p>“Highly professional team with great attention to detail. Loved working with them.”</p>
+            <div class="user">
+              <strong>Priya Sharma</strong>
+              <span>Product Manager</span>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="testimonial-card glass">
+            <p>“Their design and development quality is truly next level. Highly recommended.”</p>
+            <div class="user">
+              <strong>Rahul Mehta</strong>
+              <span>Tech Lead</span>
+            </div>
+          </div>
+
+          <!-- DUPLICATE (for infinite loop) -->
+          <div class="testimonial-card glass">
+            <p>“Stackly delivered beyond expectations. The UI is stunning and performance is top-notch.”</p>
+            <div class="user">
+              <strong>Arun Kumar</strong>
+              <span>Startup Founder</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass">
+            <p>“Highly professional team with great attention to detail. Loved working with them.”</p>
+            <div class="user">
+              <strong>Priya Sharma</strong>
+              <span>Product Manager</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+
+  <div class="container footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <h2 class="footer-logo">STACKLY</h2>
+      <p class="footer-desc">
+        Building high-performance digital experiences with modern design,
+        scalability, and innovation at the core.
+      </p>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="404.html">Home</a>
+      <a href="404.html">Services</a>
+      <a href="404.html">About</a>
+      <a href="404.html">Contact</a>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-col">
+      <h3>Services</h3>
+      <a href="404.html">Web Development</a>
+      <a href="404.html">UI/UX Design</a>
+      <a href="404.html">Branding</a>
+      <a href="404.html">Consulting</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>📍 Coimbatore, Tamil Nadu, India</p>
+      <p>📞 +91 98765 43210</p>
+      <p>📧 contact@stackly.dev</p>
+
+      <div class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button class="btn primary">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SUB FOOTER -->
+  <div class="footer-bottom">
+    <p>© 2026 Stackly. All rights reserved.</p>
+  </div>
+
+</footer>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
