@@ -264,7 +264,7 @@ p {
 .logo img {
   height: 42px; /* 🔥 adjust if needed */
   width: auto;
-
+  filter: drop-shadow(0 0 10px rgba(123,97,255,0.25));
   object-fit: contain;
 
   transition: 0.4s ease;
@@ -417,6 +417,9 @@ p {
   
   .menu-btn {
     display: block;
+  }
+  .logo img {
+    height: 36px;
   }
 }
 /* Hero section */
