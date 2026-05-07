@@ -1139,6 +1139,7 @@ p {
   position: relative;
 }
 
+
 /* layout */
 .stats-inner {
   width: 90%;
@@ -1158,7 +1159,9 @@ p {
   text-align: center;
   position: relative;
   overflow: hidden;
-
+  display: block;
+  text-decoration: none;
+  color: inherit;
   transition: all 0.4s ease;
 }
 
