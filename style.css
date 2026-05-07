@@ -13,7 +13,8 @@
   --secondary: #7b61ff;
 
   --text-main: #ffffff;
-  --text-muted: #a0a0b0;
+  --text-muted: #ebedf2;
+  --text-soft: #8f96a3;
 
   --glass: rgba(255, 255, 255, 0.05);
   --border-glass: rgba(255, 255, 255, 0.1);
@@ -253,6 +254,28 @@ p {
   transform: scale(1.05);
 }
 
+/* ================= LOGO ================= */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 42px; /* 🔥 adjust if needed */
+  width: auto;
+
+  object-fit: contain;
+
+  transition: 0.4s ease;
+}
+
+/* Hover */
+.logo:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 12px rgba(0,198,255,0.35));
+}
+
 /* ================= NAV LINKS ================= */
 .nav-links {
   display: flex;
@@ -330,6 +353,11 @@ p {
   background: rgba(255,255,255,0.05);
 }
 
+/* HIDE MOBILE MENU BUTTONS ON DESKTOP */
+.nav-links .btn {
+  display: none;
+}
+
 /* ================= MENU BUTTON ================= */
 .menu-btn {
   display: none;
@@ -348,7 +376,7 @@ p {
 
     background: rgba(10, 10, 15, 0.95);
     backdrop-filter: blur(12px);
-
+    height:100vh;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -361,11 +389,30 @@ p {
     z-index: 999;
   }
 
+  .nav-item:hover {
+    width: auto; /* 🔥 prevent stretching */
+  }
+
+  .nav-links .btn {
+    width: auto; /* 🔥 prevent full width buttons */
+    min-width: 180px;
+  }
   .nav-links.active {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+  }
+  .nav-cta .btn {
+    display: none;
+  }
+
+  /* SHOW BUTTONS INSIDE MENU */
+  .nav-links .btn {
+    display: block;
+    width: 80%;
+    max-width: 220px;
+    text-align: center;
   }
   
   .menu-btn {
@@ -1286,7 +1333,7 @@ p {
 }
 
 .process-header p {
-  color: #a0a0b0;
+  color: #ebedf2;
   max-width: 500px;
   margin: auto;
 }
@@ -1360,6 +1407,9 @@ p {
 
   transition: 0.4s;
 }
+.process-card p{
+  color:#ebedf2;
+}
 
 /* ZIG-ZAG (DESKTOP) */
 .process-step:nth-child(odd) .process-card {
@@ -1398,6 +1448,9 @@ p {
     flex-direction: column;
     padding: 40px 0;
   }
+  .process-card p{
+  color:#ebedf2;
+}
 
   /* VERTICAL LINE */
   .process-line::before {
