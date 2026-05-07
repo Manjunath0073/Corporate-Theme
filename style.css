@@ -1656,6 +1656,21 @@ p {
   color: var(--text-muted);
 }
 
+.footer-col p i {
+  color: var(--primary);
+  margin-right: 10px;
+  font-size: 15px;
+  width: 18px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.footer-col p:hover i {
+  color: #7b61ff;
+  transform: scale(1.15);
+} 
+
 /* NEWSLETTER */
 .newsletter {
   display: flex;
