@@ -788,6 +788,12 @@ p {
   margin: 0 auto 60px;
 }
 
+.service-card{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .section-header h2 {
   font-size: 36px;
   margin-bottom: 10px;
@@ -1325,7 +1331,7 @@ p {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 1px;
   background: rgba(0,198,255,0.1);
   color: #00c6ff;
@@ -1738,6 +1744,7 @@ p {
 
 .section-tag {
   font-size: 14px;
+  font-weight: bold;
   color: var(--primary);
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1772,6 +1779,9 @@ p {
 
   cursor: pointer;
   transition: 0.4s ease;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* IMAGE */
@@ -1812,7 +1822,8 @@ p {
 }
 
 .project-tag {
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
   color: var(--primary);
   letter-spacing: 1px;
 }

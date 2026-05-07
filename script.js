@@ -117,3 +117,54 @@ document.addEventListener("click", (e) => {
     navLinks.classList.remove("active");
   }
 });
+
+const navItems = document.querySelectorAll(".nav-item");
+
+navItems.forEach(item => {
+
+  item.addEventListener("mouseenter", () => {
+
+    const targetId = item.getAttribute("data-section");
+
+    const targetSection = document.getElementById(targetId);
+
+    if (!targetSection) return;
+
+    slowScroll(targetSection.offsetTop - 80, 1200); // 1200 = slower
+
+  });
+
+});
+
+
+function slowScroll(target, duration) {
+
+  const start = window.pageYOffset;
+
+  const distance = target - start;
+
+  let startTime = null;
+
+  function animation(currentTime) {
+
+    if (!startTime) startTime = currentTime;
+
+    const timeElapsed = currentTime - startTime;
+
+    const progress = Math.min(timeElapsed / duration, 1);
+
+    window.scrollTo(0, start + distance * easeInOutQuad(progress));
+
+    if (timeElapsed < duration) {
+      requestAnimationFrame(animation);
+    }
+  }
+
+  function easeInOutQuad(t) {
+    return t < 0.5
+      ? 2 * t * t
+      : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  }
+
+  requestAnimationFrame(animation);
+}
