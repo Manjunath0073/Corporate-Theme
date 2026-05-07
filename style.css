@@ -162,8 +162,6 @@ p {
   font-size: 17px;
 }
 
-/* Nav-Bar styling*/
-
 /* ================= NAVBAR BASE ================= */
 .navbar {
   position: fixed;
@@ -183,7 +181,6 @@ p {
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
-
 /* ================= NAV LIGHT SWEEP ================= */
 .navbar::before {
   content: "";
@@ -207,7 +204,6 @@ p {
   animation: navSweep 5.2s ease forwards;
 }
 
-/* animation */
 @keyframes navSweep {
   0% {
     transform: translateX(-100%) translateY(60%) rotate(25deg);
@@ -221,7 +217,6 @@ p {
     opacity: 0;
   }
 }
-
 /* ================= INNER ================= */
 .nav-inner {
   width: 90%;
@@ -232,7 +227,6 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
 /* ================= LOGO ================= */
 .logo {
   font-size: 28px;
@@ -296,8 +290,6 @@ p {
     opacity: 1;
     transform: translateY(-2px);
 }
-
-/* Premium underline animation */
 .nav-item::after {
   content: "";
   position: absolute;
@@ -313,7 +305,6 @@ p {
   transform: translateX(-50%);
 }
 
-/* Hover effect */
 .nav-item:hover {
   color: #fff;
   width: 100%;
@@ -330,20 +321,15 @@ p {
 .nav-links:hover .nav-item.active::after { 
     width: 0%;
 }
-
-/* Active page indicator */
 .nav-item.active::after {
   width: 100%;
 }
-
 /* ================= CTA ================= */
 .nav-cta {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
-/* Ghost button */
 .btn.ghost {
   background: transparent;
   border: 1px solid rgba(255,255,255,0.2);
@@ -354,18 +340,15 @@ p {
   background: rgba(255,255,255,0.05);
 }
 
-/* HIDE MOBILE MENU BUTTONS ON DESKTOP */
 .nav-links .btn {
   display: none;
 }
-
 /* ================= MENU BUTTON ================= */
 .menu-btn {
   display: none;
   font-size: 20px;
   cursor: pointer;
 }
-
 /* ================= MOBILE ================= */
 @media (max-width: 900px) {
 
@@ -391,11 +374,11 @@ p {
   }
 
   .nav-item:hover {
-    width: auto; /* 🔥 prevent stretching */
+    width: auto;
   }
 
   .nav-links .btn {
-    width: auto; /* 🔥 prevent full width buttons */
+    width: auto;
     min-width: 180px;
   }
   .nav-links.active {
@@ -408,7 +391,6 @@ p {
     display: none;
   }
 
-  /* SHOW BUTTONS INSIDE MENU */
   .nav-links .btn {
     display: block;
     width: 80%;
@@ -423,18 +405,14 @@ p {
     height: 36px;
   }
 }
-/* Hero section */
-
 /* ================= HERO BOX ================= */
 
 .ref-hero {
   padding-top: 120px;
   padding-bottom: 60px;
 
-  min-height: auto; /* 🔥 ensure no restriction */
+  min-height: auto;
 }
-
-
 .hero-box {
   position: relative;
   width: 1100px;
@@ -475,7 +453,6 @@ p {
   50%  { transform: translateY(-15px); }
   100% { transform: translateY(0); }
 }
-
 /* ================= OVERLAY ================= */
 .hero-overlay {
   position: absolute;
@@ -488,8 +465,6 @@ p {
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
 
   z-index: 1;
-
-  /* 🔥 Slide in animation */
   animation: overlaySlide 1s ease forwards;
 }
 
@@ -501,7 +476,6 @@ p {
     transform: translateX(0);
   }
 }
-
 /* ================= CONTENT ================= */
 .hero-content {
   grid-column: 1;
@@ -526,7 +500,6 @@ p {
  .hero-content p { 
     margin: 15px 0;
  }
-
 /* 🔥 TEXT ANIMATION (RIGHT → LEFT) */
 .hero-content h1,
 .hero-content p,
@@ -563,14 +536,12 @@ p {
     transform: translateX(0);
   }
 }
-
 /* ================= TEXT STYLE ================= */
 .hero-content span {
   font-size: 20px;
   letter-spacing: 4px;
   opacity: 0.9;
 }
-
 /* ================= HOVER EFFECT ================= */
 .hero-content h1:hover {
   transform: translateY(-3px);
@@ -581,20 +552,19 @@ p {
   text-shadow: 0 0 15px rgba(0,198,255,0.6);
 }
 
-
 @media (max-width: 1024px) {
 
   .hero-box {
     width: 90%;
-    height: auto; /* 🔥 remove fixed height */
-    grid-template-columns: 1fr; /* stack */
+    height: auto;
+    grid-template-columns: 1fr;
     padding: 60px 0;
   }
 
   /* overlay becomes full width background */
   .hero-overlay {
     width: 100%;
-    clip-path: none; /* 🔥 remove diagonal for smaller screens */
+    clip-path: none;
     opacity: 0.9;
   }
 
@@ -773,11 +743,7 @@ p {
   );
 }
 
-
-
-
 /* Services section */
-
 .services {
   position: relative;
 }
@@ -930,8 +896,6 @@ p {
     font-size: 28px;
   }
 }
-
-
 /* ================= ABOUT SECTION ================= */
 
 .about-split {
@@ -945,7 +909,6 @@ p {
   position: relative;
   z-index: 2;
 }
-
 /* ================= LEFT SIDE ================= */
 
 .about-left {
@@ -953,7 +916,7 @@ p {
   justify-content: center;
   align-items: center;
 
-  padding-left: 60px; /* 🔥 matches other sections */
+  padding-left: 60px;
 }
 
 .image-frame {
@@ -1006,7 +969,6 @@ p {
   transform: translateY(-5px) scale(1.02);
   transition: 0.4s ease;
 }
-
 /* ================= RIGHT CONTENT ================= */
 
 .about-right {
@@ -1030,9 +992,7 @@ p {
   opacity: 1;
   transform: translateY(0);
 }
-
 /* ================= TEXT ================= */
-
 .about-right h2 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -1071,7 +1031,6 @@ p {
     transform: translateX(0);
   }
 }
-
 /* ================= HOVER EFFECT ================= */
 
 .about-points p:hover {
@@ -1079,13 +1038,10 @@ p {
   color: var(--primary);
   transition: 0.3s;
 }
-
 /* ================= IMAGE PARALLAX SMOOTH ================= */
-
 .parallax-bg {
   transition: transform 0.2s ease-out;
 }
-
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
@@ -1100,46 +1056,32 @@ p {
   }
 
 }
-
-
 @media (max-width: 1024px) {
-
   .about-right {
     padding: 60px 40px;
   }
-
 }
-
 @media (max-width: 768px) {
-
   .about-split {
     grid-template-columns: 1fr;
   }
-
   .about-left {
     height: 260px;
   }
-
   .about-right {
     padding: 40px 20px;
     text-align: center;
     align-items: center;
   }
-
   .about-right h2 {
     font-size: 28px;
   }
-
 }
-
 /* ================= STATS SECTION ================= */
-
 .stats {
   padding: 100px 0;
   position: relative;
 }
-
-
 /* layout */
 .stats-inner {
   width: 90%;
@@ -1150,9 +1092,7 @@ p {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-
 /* ================= CARD ================= */
-
 .stat-box {
   padding: 30px 20px;
   border-radius: 20px;
@@ -1164,7 +1104,6 @@ p {
   color: inherit;
   transition: all 0.4s ease;
 }
-
 /* glow border */
 .stat-box::before {
   content: "";
@@ -1172,40 +1111,31 @@ p {
   inset: 0;
   border-radius: 20px;
   padding: 1px;
-
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
 }
-
 /* hover effect */
 .stat-box:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 20px 40px rgba(0,198,255,0.15);
 }
-
 /* ================= ICON ================= */
-
 .stat-icon {
   font-size: 28px;
   margin-bottom: 10px;
   transition: 0.3s;
 }
-
 .stat-box:hover .stat-icon {
   transform: scale(1.2) rotate(5deg);
 }
-
 /* ================= NUMBER ================= */
-
 .stat-box h3 {
   font-size: 42px;
   margin: 10px 0;
   color: #fff;
   position: relative;
 }
-
 /* animated glow pulse */
 .stat-box h3::after {
   content: "";
@@ -1225,19 +1155,15 @@ p {
   50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.7; }
   100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.4; }
 }
-
 /* ================= TEXT ================= */
-
 .stat-box p {
   font-size: 16px;
   color: var(--text-muted);
 }
-
 .stat-sub {
   font-size: 13px;
   opacity: 0.7;
 }
-
 /* ================= SCROLL REVEAL ================= */
 
 .stats {
@@ -1264,17 +1190,13 @@ p {
     grid-template-columns: 1fr;
   }
 }
-
 /* ================= STATS WRAPPER ================= */
-
 .stats-wrapper {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
-
 /* ================= HEADER ================= */
-
 .stats-header {
   max-width: 500px;
   margin-bottom: 50px;
@@ -1300,16 +1222,13 @@ p {
   font-size: 15px;
   color: var(--text-muted);
 }
-
 /* ================= RESPONSIVE ================= */
-
 @media (max-width: 768px) {
 
   .stats-header {
     text-align: center;
     margin-bottom: 40px;
   }
-
   .stats-title {
     font-size: 26px;
   }
@@ -1574,8 +1493,6 @@ p {
   from { text-shadow: 0 0 10px rgba(0,198,255,0.4); }
   to   { text-shadow: 0 0 25px rgba(123,97,255,0.6); }
 }
-
-
 /* ================= FOOTER ================= */
 .footer {
   margin-top: 80px;
@@ -1732,8 +1649,6 @@ p {
   }
 
 }
-
-/* ================= SHOWCASE ================= */
 /* ================= SHOWCASE ================= */
 .showcase {
   padding: 50px 0; /* 🔥 matches your sections */

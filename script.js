@@ -4,8 +4,6 @@ const observer = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("active");
-
-      // run only once
       obs.unobserve(entry.target);
     }
   });
@@ -16,8 +14,6 @@ const observer = new IntersectionObserver((entries, obs) => {
 if (aboutContent) {
   observer.observe(aboutContent);
 }
-
-
 
 // ================= STATS COUNTER =================
 
@@ -95,7 +91,7 @@ if (processLine) {
 window.addEventListener("load", () => {
   const loader = document.getElementById("pageLoader");
 
-  if (!loader) return; // 🔥 prevents errors on other pages
+  if (!loader) return;
 
   setTimeout(() => {
     loader.classList.add("hide");
@@ -130,7 +126,7 @@ navItems.forEach(item => {
 
     if (!targetSection) return;
 
-    slowScroll(targetSection.offsetTop - 80, 1200); // 1200 = slower
+    slowScroll(targetSection.offsetTop - 80, 1200);
 
   });
 
