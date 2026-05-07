@@ -159,6 +159,7 @@ h1, h2, h3 {
 p {
   color: var(--text-muted);
   line-height: 1.6;
+  font-size: 17px;
 }
 
 /* Nav-Bar styling*/
@@ -794,6 +795,7 @@ p {
 
 .section-header p {
   color: var(--text-muted);
+  font-size: 16px;
 }
 
 /* subtle accent line */
@@ -841,7 +843,7 @@ p {
 
 /* DESCRIPTION */
 .service-card p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* HOVER LIFT */
@@ -1039,7 +1041,7 @@ p {
 
 .about-points p {
   margin-bottom: 12px;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
 
   opacity: 0;
@@ -1339,6 +1341,7 @@ p {
   color: #ebedf2;
   max-width: 500px;
   margin: auto;
+  font-size: 16px;
 }
 
 /* =========================
@@ -1411,7 +1414,8 @@ p {
   transition: 0.4s;
 }
 .process-card p{
-  color:#ebedf2;
+  color:#ffffff;
+  font-size: 16px;
 }
 
 /* ZIG-ZAG (DESKTOP) */
@@ -1647,7 +1651,7 @@ p {
 
 /* CONTACT */
 .footer-col p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
   color: var(--text-muted);
 }
@@ -1708,7 +1712,7 @@ p {
 /* ================= SHOWCASE ================= */
 /* ================= SHOWCASE ================= */
 .showcase {
-  padding: 100px 0; /* 🔥 matches your sections */
+  padding: 50px 0; /* 🔥 matches your sections */
 }
 
 /* ================= HEADER ================= */
@@ -1731,6 +1735,7 @@ p {
 
 .showcase-header p {
   color: var(--text-muted);
+  font-size: 16px;
 }
 
 /* ================= GRID ================= */
@@ -1856,7 +1861,7 @@ p {
 
 /* ================= TESTIMONIALS ================= */
 .testimonials {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 /* HEADER */
@@ -1900,7 +1905,7 @@ p {
 
 /* TEXT */
 .testimonial-card p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
   color: var(--text-muted);
 }
