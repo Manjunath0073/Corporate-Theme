@@ -106,6 +106,7 @@ body {
 .btn.primary {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #fff;
+  min-width: 100px;
 }
 
 .btn.primary:hover {
@@ -120,6 +121,7 @@ body {
   color: var(--text-main);
   overflow: hidden;
   transition: all 0.3s ease;
+  min-width: 100px;
 }
 .btn.ghost::before { 
     content: "";

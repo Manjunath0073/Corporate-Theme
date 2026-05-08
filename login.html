@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Login | Stackly</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <section class="login-page">
+        <!-- ================= BACKGROUND ================= -->
+        <div class="login-bg">
+            <div class="orb orb1"></div>
+            <div class="orb orb2"></div>
+            <div class="orb orb3"></div>
+        </div>
+
+        <!-- ================= LOGIN SECTION ================= -->
+        <section class="login-section">
+
+            <div class="login-container glass">
+
+            <!-- LEFT SIDE -->
+                <div class="login-left">
+
+                    <a href="index.html" class="logo">
+                        <img src="./Assets/logo-stackly.webp" alt="Stackly Logo">
+                    </a>
+                </div>
+
+            <!-- RIGHT SIDE -->
+                <div class="login-right">
+
+                    <div class="login-header">
+                        <span class="login-title">WELCOME BACK</span>
+                    </div>
+                    
+                    <!-- FORM -->
+                    <form class="login-form" action="./index.html">
+                    <!-- EMAIL -->
+                        <div class="input-group">
+                            <h2 class = "login-subtitle">Login to Your Account</h2>
+                            <label for="email">Email Address</label>
+
+                            <div class="input-box">
+                                <input 
+                                    type="email"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+                                <i class="fas fa-envelope"></i>                    
+                            </div>
+
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="input-group">
+
+                            <label for="password">Password</label>
+
+                            <div class="input-box">
+                                <input 
+                                    type="password"
+                                    id="password"
+                                    placeholder="Enter your password"
+                                    required
+                                >
+                                <i class="fas fa-lock"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- OPTIONS -->
+                        <div class="form-options">
+
+                            <label class="remember-me">
+                            <input type="checkbox">
+                            Remember Me
+                            </label>
+
+                        </div>
+
+                        <!-- LOGIN BUTTON -->
+                        <button type="submit" class="login-btn">
+                        Login
+                        </button>
+
+                        <!-- FORGOT PASSWORD -->
+                        <div class="forgot-password">
+                            <a href="404.html">Forgot Password?</a>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+
+</body>
+</html>
